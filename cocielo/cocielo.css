@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.button-voltar{
+    padding: 6px 15px;
+    background-color: #EDEBD7;
+    color: #161925;
+    text-decoration: none;
+    position: absolute;
+    border-radius: 10px;
+    top: 5px;
+    left: 5px;
+}
+
+.goes-img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+body {
+    background-color: #06062d;
+}
+
+.container{
+    height: 98vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+img{
+    width: 300px;
+}
+
+.button-veredito{
+    margin: 10px;
+    padding: 10px;
+    background-color: #197278;
+    border-radius: 10px;
+    color: #EDEBD7;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.veredito-section{
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #EDEBD7;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
