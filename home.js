@@ -1,10 +1,11 @@
 function lookathim() {
-    var buttonPride = document.querySelector('.button-pride')
+    var loader = document.querySelector('.efeito-loading')
     var audioPride = document.querySelector('.audio-pride')
     var wrapPage = document.querySelector('.wrap-lookathim')
 
     audioPride.play();
-    wrapPage.style.display = 'none';
+    loader.style.display = 'block'
+    wrapPage.style.animation = 'transition linear 2s forwards';
 }
 
 function enterMion() {
