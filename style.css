@@ -37,23 +37,23 @@ button {
     text-transform: uppercase;
     font-size: 15px;
     transition: all .5s ease;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     letter-spacing: 3px;
     background-color: #D90429;
     color: hsl(0, 0%, 100%);
     box-shadow: #D90429 0px 7px 29px 0px;
-   }
-   
-   button:active {
+}
+
+button:active {
     letter-spacing: 3px;
     background-color: #D90429;
     color: hsl(0, 0%, 100%);
     box-shadow: #D90429 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
-   }
+}
 
 .header {
     padding: 10px;
@@ -61,9 +61,11 @@ button {
     color: #EDEBD7;
     text-align: center;
     transition: all 0.5s ease-out;
-}.header:hover{
+}
+
+.header:hover {
     background-color: #EDEBD7;
-    color:#161925;
+    color: #161925;
     letter-spacing: 1px;
     box-shadow: 0px 0px 30px #EDEBD7, 0px 0px 15px #EDEBD7;
 
@@ -73,6 +75,7 @@ button {
     padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     color: #D90429;
 
 }
@@ -96,12 +99,16 @@ button {
     text-shadow: 0px 0px 10px #EDEBD7;
 }
 
-.quadro-h1{
+.quadro-h1 {
     padding: 10px 0px 10px 0px;
 }
 
 .quadro-img {
     width: 200px;
+} .quadro-img:hover{
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 0px 15px #EDEBD7, 0px 0px 7px #EDEBD7 inset;
 }
 
 .button-veredito {
@@ -112,6 +119,39 @@ button {
     font-weight: 550;
     color: #EDEBD7;
     background-color: #197278;
-    ;
     text-decoration: none;
+    transition: all 0.2s ease-out;
+    text-shadow: none;
+}.button-veredito:hover{
+    letter-spacing: 1px;
+    background-color: #155e63;
+}
+
+@media (max-width: 566px) {
+    .header {
+        font-size: 10px;
+        border: 1px solid #EDEBD7;
+    }.quadros {
+        width: 200px;
+        height: 320px;
+        margin: 5px;
+        font-size: 10px;
+    }.quadro-img{
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quadros{
+        width: 270px;
+        height: 350px;
+        margin: 5px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1336px) {
 }

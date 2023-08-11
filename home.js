@@ -19,6 +19,10 @@ function enterCocielo() {
     var audioCocielo = document.querySelector('#audio-cocielo')
     audioCocielo.play();
 }
+function enterRossi() {
+    var audioRossi = document.querySelector('#audio-rossi')
+    audioRossi.play();
+}
 
 /* MOUSE OUT*/
 function outMion(){
@@ -34,4 +38,8 @@ function outMuzy(){
 function outCocielo(){
     var audiococielo = document.querySelector('#audio-cocielo')
     audiococielo.load();
+}
+function outRossi(){
+    var audioRossi = document.querySelector('#audio-rossi')
+    audioRossi.load();
 }
