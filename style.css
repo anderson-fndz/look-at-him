@@ -134,7 +134,7 @@ button:active {
 
 .quadros {
     width: 300px;
-    height: 390px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,15 +153,16 @@ button:active {
 
 .quadro-h1 {
     padding: 10px 0px 10px 0px;
+    text-align: center;
 }
 
 .quadro-img {
     width: 200px;
-} .quadro-img:hover{
+} /*.quadro-img:hover{
     border-radius: 10px;
     transition: all 0.2s ease-out;
     box-shadow: 0px 0px 15px #EDEBD7, 0px 0px 7px #EDEBD7 inset;
-}
+}*/
 
 .button-veredito {
     margin: 10px;
@@ -200,10 +201,4 @@ button:active {
         margin: 5px;
         font-size: 13px;
     }
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 1336px) {
 }

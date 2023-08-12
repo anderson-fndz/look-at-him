@@ -18,6 +18,7 @@
 
 .goes-img{
     width: 100px;
+    padding: 10px 0px;
     border-radius: 50%;
 }
 
@@ -26,7 +27,7 @@ body {
 }
 
 .container{
-    height: 98vh;
+    height: 100vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -34,18 +35,30 @@ body {
     color: white;
 }
 
-img{
-    width: 300px;
+.container-img{
+    width: 290px;
+    margin: 12px 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 0px 15px #EDEBD7, 0px 0px 7px #EDEBD7 inset;
 }
 
 .button-veredito{
-    margin: 10px;
-    padding: 10px;
-    background-color: #197278;
-    border-radius: 10px;
-    color: #EDEBD7;
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #155e63;
+    box-shadow: #0000000d 0 0 8px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-size: 15px;
+    color:#EDEBD7;
+    transition: all .5s ease;
+}
+.button-veredito:hover{
+    letter-spacing: 2px;
+    background-color: #EDEBD7;
+    color: #161925;
 }
 
 .veredito-section{
