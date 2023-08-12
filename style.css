@@ -18,7 +18,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     animation: none;
 }
 
@@ -55,13 +56,11 @@ body {
     
     }
 }
-
-
 .efeito-loading{
     width: 55px;
     height: 55px;
-    position: fixed;
-    display: none;
+    opacity: 0;
+    margin-top: 5px;
     background-color: transparent;
     border: 10px solid #D90429;
     border-radius: 50%;
@@ -78,11 +77,12 @@ body {
     }
 }
 
-button {
+.btn-first {
     padding: 17px 40px;
     margin-bottom: 10px;
     border-radius: 50px;
     border: 0;
+    position: relative;
     background-color: white;
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
@@ -91,14 +91,14 @@ button {
     transition: all .5s ease;
 }
 
-button:hover {
+.btn-first:hover {
     letter-spacing: 3px;
     background-color: #D90429;
     color: hsl(0, 0%, 100%);
     box-shadow: #D90429 0px 7px 29px 0px;
 }
 
-button:active {
+.btn-first:active {
     letter-spacing: 3px;
     background-color: #D90429;
     color: hsl(0, 0%, 100%);
@@ -126,6 +126,7 @@ button:active {
 .galeria {
     padding-top: 20px;
     display: flex;
+    position: relative;
     justify-content: space-evenly;
     flex-wrap: wrap;
     color: #D90429;
@@ -142,13 +143,19 @@ button:active {
     border: 2px solid #D90429;
     transition: all 0.3s ease-out;
 }
-
 .quadros:hover {
     border: 2px solid #c10726;
     border-radius: 20px;
     box-shadow: 0px 0px 30px #D90429, 0px 0px 15px #D90429 inset;
     color: #EDEBD7;
     text-shadow: 0px 0px 10px #EDEBD7;
+}
+
+.sobreposicao{
+    width: 300px;
+    height: 400px;
+    display: block;
+    position: absolute;
 }
 
 .quadro-h1 {
@@ -168,6 +175,7 @@ button:active {
     margin: 10px;
     padding: 10px 20px;
     border-radius: 5px;
+    position: relative;
     text-transform: uppercase;
     font-weight: 550;
     color: #EDEBD7;

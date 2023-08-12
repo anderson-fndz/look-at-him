@@ -4,7 +4,7 @@ function lookathim() {
     var wrapPage = document.querySelector('.wrap-lookathim')
 
     audioPride.play();
-    loader.style.display = 'block'
+    loader.style.opacity = '100%'
     wrapPage.style.animation = 'transition linear 2s forwards';
 }
 
